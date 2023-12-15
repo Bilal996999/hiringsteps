@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <link rel="stylesheet" href="./assets/css/font-awesome.min.css" />
+  <!-- <link rel="stylesheet" href="./assets/css/bootstrap.min.css" /> -->
+  <link rel="stylesheet" href="./assets/css/locomotive-scroll.min.css" />
+  <link rel="stylesheet" href="./assets/css/slick.css" />
+  <link rel="stylesheet" href="./assets/css/aos.css" />
+  <link rel="stylesheet" href="./dist/output.css" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body class="overflow-x-hidden">
+
+  <main class="min-h-screen font-DMSans">
+    <nav class="bg-transparent absolute top-[20px] left-0 w-full z-20">
+      <div class="container mx-auto px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+          <div class="absolute inset-y-0 sm:left-0 right-0 flex items-center md:hidden">
+            <!-- Mobile menu button-->
+            <button type="button" id="mobile-trigger"
+              class="relative inline-flex items-center justify-center rounded-md p-2 ring-white text-white hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              aria-controls="mobile-menu" aria-expanded="false">
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Open main menu</span>
+
+              <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+
+              <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="flex flex-1 items-center justify-start md:items-stretch md:justify-between sm:justify-center md:me-[20px]">
+            <div class="flex flex-shrink-0 items-center">
+              <a href="./index.html" ><img class="h-[23px] lg:max-w-[278px] md:max-w-[200px]" src="./assets/img/logo.png" alt="Logo"></a>
+            </div>
+            <div class="hidden md:ml-6 md:block justify-self-end">
+              <div class="flex lg:space-x-8 md:space-x-3 font-DMSans">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="./index.html" class="text-white hover:text-gray-300 lg:text-[20px] md:text-[17px] font-medium uppercase"
+                  aria-current="page">Home</a>
+                <a href="#hiring" class="text-white hover:text-gray-300 lg:text-[20px] md:text-[17px] font-medium uppercase" data-scroll-to>Why Hiring
+                  Steps</a>
+                <a href="#about" class="text-white hover:text-gray-300 lg:text-[20px] md:text-[17px] font-medium uppercase" data-scroll-to>About</a>
+              </div>
+            </div>
+          </div>
+          <div class="absolute inset-y-0 right-0 items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 hidden sm:flex">
+            <a href="#"
+              class="bg-white text-themeColor-0 lg:px-[35px] lg:py-[15px] md:px-[30px] md:py-[12px] px-[25px] py-[10px] font-DMSans font-black lg:text-[20px] md:text-[16px] text-[14px] rounded-md transition-all hover:scale-95">
+              CONTACT US
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div class="md:hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pb-3 pt-2 bg-slate-900 rounded-lg">
+          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+          <a href="#" class="text-white block rounded-md px-3 py-2 text-base font-medium"
+            aria-current="page">Home</a>
+          <a href="#"
+            class="text-white hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Why
+            Hiring Steps</a>
+          <a href="#"
+            class="text-white hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">About</a>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="lg:min-h-[1123px] min-h-[950px] bg-[url('/assets/img/hero.png')] bg-cover flex flex-col items-center justify-center lg:bg-center bg-left-bottom">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-full flex-wrap">
+          <div class="w-full 2xl:w-6/12 lg:w-8/12" data-scroll data-scroll-speed=".2">
+            <h1 class="font-Anton 2xl:text-[80px] xl:text-[70px] text-center lg:text-left md:text-[57px] sm:text-[47px] text-[34px] leading-[1.3em] text-white" data-aos="fade-up" data-aos-duration="1000">
+              Don't Let Employee Turnover Affect Your <br>
+              <span class="text-themeColor2-0">Profitability and Reputation.</span>
+            </h1>
+            <p class="lg:w-9/12 w-full text-white 2xl:text-[24px] xl:text-[20px] sm:text-[18px] text-[16px] lg:text-left text-center mt-7 font-DMSans" data-aos="fade-up"
+              data-aos-duration="1000" data-aos-delay="300">
+              Use Our QR Code Hiring Poster And Innovative Hiring Tools To Make Your Next Hire.
+            </p>
+            <div class="flex items-center justify-center lg:justify-start gap-5 mt-7 flex-wrap" data-aos="fade-up" data-aos-duration="1000"
+              data-aos-delay="500">
+              <a href="#"
+                class="bg-white flex items-center justify-start gap-5 transition-all hover:scale-95 rounded-md text-themeColor-0 py-[10px] px-[25px] 2xl:text-[24px] sm:text-[20px] text-[17px]">
+                <i class="fa-solid fa-user-plus"></i>
+                <p class="font-DMSans">Sign Up Now</p>
+              </a>
+              <a href="#"
+                class="flex items-center justify-start gap-5 transition-all hover:scale-95 rounded-md text-themeColor2-0 py-[10px] px-[25px] text-[24px]">
+                <i class="fa-solid fa-phone-volume 2xl:text-[30px] lg:text-[24px] text-[24px]"></i>
+                <div>
+                  <p class="font-DMSans text-[14px] uppercase">Call us TODAY</p>
+                  <p class="font-black 2xl:text-[30px] sm:text-[24px] text-[20px] text-white">888-315-5480</p>
+                </div>
+              </a>
+            </div>
+            <h3 class="font-bold 2xl:text-[30px] lg:text-[26px] lg:text-left text-center text-[20px] text-white mt-4" data-aos-offset="0" data-aos="fade-up"
+              data-aos-duration="1000" data-aos-delay="600">Use Promo Code - QRHOLIDAY</h3>
+          </div>
+          <div class="w-full xl:w-6/12 lg:w-4/12 block">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-[70px] xl:pb-[140px] pb-[70px]">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+
+        <h2 class="font-Anton text-themeColor-0 text-center lg:mb-20 mb-8 2xl:text-[80px] xl:text-[70px] md:text-[57px] sm:text-[47px] text-[34px] leading-[1.3em]" data-aos="fade-down"
+          data-aos-duration="1000">
+          Why Create Your QR <span class="text-themeColor2-0">Code</span> And <span
+            class="text-themeColor2-0">Poster</span>
+        </h2>
+
+        <div class="grid lg:grid-cols-3 grid-cols-1 gap-8 items-center justify-center">
+
+
+          <div data-scroll data-scroll-speed=".1">
+            <div data-aos="flip-down" data-aos-duration="1000"
+              class="2xl:min-h-[450px] lg:min-h-[400px] min-h-[300px] bg-[#ECFAFE] border flex lg:items-start items-center 2xl:gap-7 gap-4 flex-col justify-center px-[30px] rounded-3xl transition-all hover:border-themeColor2-0 hover:shadow-md">
+              <img src="./assets/img/Foot-Traffic.png" class="2xl:max-w-[66px] 2xl:h-[76px] max-w-[56px] h-[66px]" />
+
+              <h4 class="text-themeColor-0 2xl:text-[36px] xl:text-[30px] text-[26px] font-DMSans font-black">
+                Foot Traffic
+              </h4>
+              <p class="2xl:text-[20px] xl:text-[18px] text-[16px] lg:text-left text-center text-themeColor-0 leading-[1.5em]">
+                Leverage Your Foot Traffic.
+                Don't Miss Out On Great Talent Walking By Your Restaurant.
+                Let Them Apply With The QR Code.
+              </p>
+            </div>
+          </div>
+
+          <div data-scroll data-scroll-speed="-.1">
+            <div data-aos="flip-down" data-aos-duration="1000" data-aos-delay="300"
+              class="2xl:min-h-[450px] lg:min-h-[400px] min-h-[300px] bg-[#ECFAFE] border flex lg:items-start items-center 2xl:gap-7 gap-4 flex-col justify-center px-[30px] rounded-3xl transition-all hover:border-themeColor2-0 hover:shadow-md">
+              <img src="./assets/img/Video-Application.png" class="2xl:max-w-[82px] 2xl:h-[48px] max-w-[70px] h-[40px]" />
+              <h4 class="text-themeColor-0 2xl:text-[36px] xl:text-[30px] text-[26px] font-DMSans font-black">
+                Video Application
+              </h4>
+              <p class="2xl:text-[20px] xl:text-[18px] text-[16px] lg:text-left text-center text-themeColor-0 leading-[1.5em]">
+                Our Video Application Makes It Easy For You To Hire “The One”. Simply Create A Few Key Questions For
+                Your
+                Candidates And Then Watch Their Video Answers To Make A Quick Hire.
+              </p>
+            </div>
+          </div>
+
+
+          <div data-scroll data-scroll-speed=".1">
+            <div data-aos="flip-down" data-aos-duration="1000" data-aos-delay="500"
+              class="2xl:min-h-[450px] lg:min-h-[400px] min-h-[300px] bg-[#ECFAFE] border flex lg:items-start items-center 2xl:gap-7 gap-4 flex-col justify-center px-[30px] rounded-3xl transition-all hover:border-themeColor2-0 hover:shadow-md">
+              <img src="./assets/img/5-Star-Reputation.png" class="2xl:max-w-[188px] 2xl:h-[35px] max-w-[170px] h-[30px]" />
+              <h4 class="text-themeColor-0 xl:text-[30px] text-[26px] font-DMSans font-black">
+                5 Star Reputation
+              </h4>
+              <p class="2xl:text-[20px] xl:text-[18px] text-[16px] lg:text-left text-center text-themeColor-0 leading-[1.5em]">
+                You Have Enough Challenges Operating Your Restaurant. Let Hiring Steps Help You Find And Hire The “A”
+                Team.
+              </p>
+            </div>
+          </div>
+
+
+        </div>
+
+
+        <div class="grid lg:grid-cols-2 grid-cols-1 gap-[40px] items-center justify-center xl:mt-[170px] xl:pt-[90px] mt-[60px]" id="hiring" data-scroll-to-href="hiring">
+          <div data-scroll data-scroll-speed="-.1">
+            <div data-aos="zoom-in" data-aos-duration="800"
+              class="before:content-none lg:before:content-[''] before:bg-[url('/assets/img/bg-overlay.png')] 2xl:before:h-[714px] before:h-full 2xl:before:w-[690px] before:w-full lg:before:bg-cover before:bg-contain before:absolute before:left-0 2xl:before:top-[-85px] before:top-[-35px] before:animate-wiggle ">
+              <img src="./assets/img/hiring-img.png" class="xl:h-[605px] h-auto relative" />
+            </div>
+          </div>
+          <div>
+            <div data-scroll data-scroll-speed=".1">
+              <h2 class="font-Anton 2xl:text-[80px] xl:text-[70px] lg:mb-[30px] text-center lg:text-left md:text-[57px] sm:text-[47px] text-[34px] leading-[1.3em] text-themeColor-0" data-aos="fade-down"
+                data-aos-duration="1000">
+                The only <span class="text-themeColor2-0">Hiring
+                  Platform</span> you need.
+              </h2>
+              <p class="2xl:text-[20px] xl:text-[18px] lg:text-left text-center sm:text-[16px] text-[14px] lg:my-0 my-9 text-themeColor-0 leading-[1.5em]" data-aos="fade-up" data-aos-duration="1000"
+                data-aos-delay="300">
+                Meet Your New Hiring Solution. Hiring Steps Is A Premium Service Designed With Your Hiring Needs In
+                Mind. One That Brings Talent Directly To You Through Our Seamless In-Platform Hiring Process.<br><br>
+
+                One That Not Only Saves You Time But Also Gives You The Advantage Of Pairing Streamlined Hiring Steps
+                With Top-Notch Talent. So You Can Find Your Perfect Right-Fit Hire The First Time Around.
+              </p>
+              <div class="flex  items-center lg:justify-start justify-center gap-5 mt-5 aos-init aos-animate flex-wrap" data-aos-offset="0"
+                data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                <p class="2xl:text-[24px] md:text-[22px] text-[18px] lg:text-left text-center text-themeColor-0 leading-[30px] w-full">Simple, Quick, And Easy Hiring? Yes, It’s
+                  Possible.</p>
+                <a href="#"
+                  class="bg-themeColor-0 order-2 sm:order-1 flex items-center justify-start gap-5 transition-all hover:scale-95 rounded-md text-white py-[10px] px-[32px] 2xl:text-[22px] xl:text-[20px] text-[18px]">
+                  <p class="font-DMSans font-black">Read More</p>
+                </a>
+                <a href="#"
+                  class="flex order-1 sm:order-2 items-center justify-start gap-5 transition-all hover:scale-95 rounded-md text-themeColor2-0 py-[10px] px-[25px] text-[24px]">
+                  <svg class="svg-inline--fa fa-phone-volume 2xl:text-[30px] xl:text-[26px] text-[22px]" aria-hidden="true" focusable="false"
+                    data-prefix="fas" data-icon="phone-volume" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512" data-fa-i2svg="">
+                    <path fill="currentColor"
+                      d="M280 0C408.1 0 512 103.9 512 232c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm-32-72c0-13.3 10.7-24 24-24c75.1 0 136 60.9 136 136c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3 0-24-10.7-24-24zM117.5 1.4c19.4-5.3 39.7 4.6 47.4 23.2l40 96c6.8 16.3 2.1 35.2-11.6 46.3L144 207.3c33.3 70.4 90.3 127.4 160.7 160.7L345 318.7c11.2-13.7 30-18.4 46.3-11.6l96 40c18.6 7.7 28.5 28 23.2 47.4l-24 88C481.8 499.9 466 512 448 512C200.6 512 0 311.4 0 64C0 46 12.1 30.2 29.5 25.4l88-24z">
+                    </path>
+                  </svg><!-- <i class="fa-solid fa-phone-volume fa-xl"></i> Font Awesome fontawesome.com -->
+                  <div>
+                    <p class="font-DMSans text-[14px] uppercase">Call us TODAY</p>
+                    <p class="font-black 2xl:text-[30px] xl:text-[26px] text-[22px] text-themeColor-0">888-315-5480</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-[75px] bg-gradient-to-b from-themeColor-0 lg:from-50% sm:from-30% from-20% to-transparent lg:to-50% sm:to-30% to-20%">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8" data-scroll data-scroll-speed=".1">
+        <h2 class="font-Anton 2xl:text-[80px] xl:text-[70px] text-center md:text-[57px] sm:text-[47px] text-[34px] leading-[1.3em] text-white" data-aos="fade-down"
+          data-aos-duration="1000">
+          Why Choose <span class="text-themeColor2-0">Hiring Steps?</span>
+        </h2>
+        <p class="text-white 2xl:text-[24px] xl:text-[20px] sm:text-[18px] text-[16px] text-center mt-7 font-DMSans leading-[1.6em]" data-aos="fade-up" data-aos-duration="1000"
+          data-aos-delay="300">
+          We Know Competition For Talent Amongst Restaurants Is Fierce. Discover The New Way To Hire With Your QR Code
+          Hiring Poster.
+          Our Revolutionary Video Application Will Save You Tons Of Time And Allow You To Hire “The One” Before Your
+          Competition.
+        </p>
+        <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-[30px] items-center justify-center mt-[60px] xl:mb-0 mb-9">
+
+          <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+            <div class="transition-all ease-in-out duration-300 hover:translate-y-[-10px]">
+              <img src="./assets/img/steps-1.png" class="2xl:h-[420px] xl:h-[380px] h-[300px] w-full object-cover rounded-lg" />
+              <h4 class="2xl:text-[30px] sm:text-left text-center te xl:text-[26px] lg:text-[24px] md:text-[20px] text-[18px] leading-[1.3em] font-black text-themeColor-0 my-5">
+                Cost Effective
+              </h4>
+              <p class="2xl:text-[16px] xl:text-[15px] sm:text-left text-center text-themeColor-0 leading-[1.5em]">
+                There Is No Need To Spend Thousands On The Hiring Process. Hiring Steps Is A Fraction Of The Cost Of A
+                Recruiter But Still Provides
+              </p>
+              <a href="#"
+                class="text-[18px] block sm:text-left text-center font-black mt-5 text-themeColor-0 transition-all hover:text-themeColor2-0">
+                Read More
+              </a>
+            </div>
+          </div>
+
+          <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+            <div class="transition-all ease-in-out duration-300 hover:translate-y-[-10px]">
+              <img src="./assets/img/steps-2.png" class="2xl:h-[420px] xl:h-[380px] h-[300px] w-full object-cover rounded-lg" />
+              <h4 class="2xl:text-[30px] xl:text-[26px] sm:text-left text-center lg:text-[24px] md:text-[20px] text-[18px] leading-[1.3em] font-black text-themeColor-0 my-5">
+                Integration With
+                Premium Job Boards
+              </h4>
+              <p class="2xl:text-[16px] xl:text-[15px] sm:text-left text-center text-[14px] text-themeColor-0 leading-[1.5em]">
+                At Hiring Steps, We Integrated Our Platform With The Best. Partnership With Premium
+              </p>
+              <a href="#"
+                class="text-[18px] sm:text-left text-center block font-black mt-5 text-themeColor-0 transition-all hover:text-themeColor2-0">
+                Read More
+              </a>
+            </div>
+          </div>
+
+          <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="700">
+            <div class="transition-all ease-in-out duration-300 hover:translate-y-[-10px]">
+              <img src="./assets/img/steps-3.png" class="2xl:h-[420px] xl:h-[380px] h-[300px] w-full object-cover rounded-lg" />
+              <h4 class="2xl:text-[30px] xl:text-[26px] lg:text-[24px] sm:text-left text-center md:text-[20px] text-[18px] leading-[1.3em] font-black text-themeColor-0 my-5">
+                Complete Hiring
+                Solution
+              </h4>
+              <p class="2xl:text-[16px] sm:text-left text-center xl:text-[15px] text-[14px] text-themeColor-0 leading-[1.5em]">
+                We Understand That Every Business Has A Different Hiring Process Equipped With
+              </p>
+              <a href="#"
+                class="text-[18px] sm:text-left text-center block font-black mt-5 text-themeColor-0 transition-all hover:text-themeColor2-0">
+                Read More
+              </a>
+            </div>
+          </div>
+
+          <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="900">
+            <div class="transition-all ease-in-out duration-300 hover:translate-y-[-10px]">
+              <img src="./assets/img/steps-4.png" class="2xl:h-[420px] xl:h-[380px] h-[300px] w-full object-cover rounded-lg" />
+              <h4 class="2xl:text-[30px] xl:text-[26px] lg:text-[24px] sm:text-left text-center md:text-[20px] text-[18px] leading-[1.3em] font-black text-themeColor-0 my-5">
+                Premium Client
+                Support
+              </h4>
+              <p class="2xl:text-[16px] sm:text-left text-center xl:text-[15px] text-[14px] text-themeColor-0 leading-[1.5em]">
+                We Believe You Should Always Have Access To The Support You Need On Your Hiring
+              </p>
+              <a href="#"
+                class="text-[18px] sm:text-left text-center block font-black mt-5 text-themeColor-0 transition-all hover:text-themeColor2-0">
+                Read More
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="xl:pb-[75px] lg:pb-[30px]">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-themeColor2-0 xl:py-[50px] py-[34px] xl:px-[60px] px-[25px] rounded-lg" data-scroll data-scroll-speed=".13">
+          <p class="text-white xl:text-[30px] md:text-[24px] text-[20px] leading-[1.6em] text-center" data-aos="fade-in" data-aos-duration="1500">
+            Your Business Is Unlike Any Other. Your Hiring Process Should Be Too.
+            Finally, An All-In-One Service That Is A Complete Hiring Solution.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-[40px]">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="font-Anton 2xl:text-[80px] xl:text-[70px] text-center md:text-[57px] sm:text-[47px] text-[34px] leading-[1.3em] text-themeColor-0" data-aos="fade-down"
+          data-aos-duration="1000">
+          How It Works
+        </h2>
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-10 items-center justify-center mt-14">
+
+          <div data-aos="fade-up" data-aos-duration="1000"
+            class="relative lg:before:content-[''] before:content-none before:absolute before:right-[-80px] before:top-[30px] before:bg-[url('/assets/img/arrow.png')] 2xl:before:h-[75px] 2xl:before:w-[106px] before:h-[65px] before:w-[85px] before:bg-contain before:bg-center before:bg-no-repeat">
+            <div
+              class="mx-auto 2xl:max-w-[200px] sm:max-w-[160px] max-w-[130px] 2xl:h-[200px] sm:h-[160px] h-[130px] border-[10px] border-[#D0F3FB] text-center rounded-full flex justify-center items-center">
+              <img src="./assets/img/sign-up.png" class="2xl:max-w-[60px] 2xl:h-[60px] max-w-[40px] h-[40px] m-auto" />
+            </div>
+            <h4 class="2xl:text-[30px] xl:text-[26px] lg:text-[22px] text-[20px] text-themeColor-0 font-black text-center my-5">
+              Sign Up
+            </h4>
+            <p class="text-themeColor-0 2xl:text-[18px] lg:text-[16px] text-[14px] leading-[1.5em] text-center">
+              Sign Up In Less Than 2 Minutes. No Credit Card Required. Free For 30 Days.
+            </p>
+          </div>
+
+          <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000"
+            class="relative lg:top-20 top-0 lg:before:content-[''] before:content-none before:absolute before:right-[-80px] before:bottom-[280px] before:rotate-[20deg] before:scale-y-[-1] before:bg-[url('/assets/img/arrow.png')] 2xl:before:h-[75px] 2xl:before:w-[106px] before:h-[65px] before:w-[85px] before:bg-contain before:bg-center before:bg-no-repeat">
+            <div
+              class="mx-auto 2xl:max-w-[200px] sm:max-w-[160px] max-w-[130px] 2xl:h-[200px] sm:h-[160px] h-[130px] border-[10px] border-[#D0F3FB] text-center rounded-full flex justify-center items-center">
+              <img src="./assets/img/job.png" class="2xl:max-w-[60px] 2xl:h-[60px] max-w-[40px] h-[40px] m-auto" />
+            </div>
+            <h4 class="2xl:text-[30px] xl:text-[26px] lg:text-[22px] text-[20px] text-themeColor-0 font-black text-center my-5">
+              Create Your Job
+            </h4>
+            <p class="text-themeColor-0 2xl:text-[18px] lg:text-[16px] text-[14px] leading-[1.5em] text-center">
+              Include Job Title, Description, Screening Questions And On-Demand Video.
+              Don't Forget To Upload Your Company Logo.
+            </p>
+          </div>
+
+          <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000"
+            class="relative lg:before:content-[''] before:content-none before:absolute before:right-[-80px] before:top-[30px] before:bg-[url('/assets/img/arrow.png')] 2xl:before:h-[75px] 2xl:before:w-[106px] before:h-[65px] before:w-[85px] before:bg-contain before:bg-center before:bg-no-repeat">
+            <div
+              class="mx-auto 2xl:max-w-[200px] sm:max-w-[160px] max-w-[130px] 2xl:h-[200px] sm:h-[160px] h-[130px] border-[10px] border-[#D0F3FB] text-center rounded-full flex justify-center items-center">
+              <img src="./assets/img/qr-code.png" class="2xl:max-w-[60px] 2xl:h-[60px] max-w-[40px] h-[40px] m-auto" />
+            </div>
+            <h4 class="2xl:text-[30px] xl:text-[26px] lg:text-[22px] text-[20px] text-themeColor-0 font-black text-center my-5">
+              Print Out QR Code
+            </h4>
+            <p class="text-themeColor-0 2xl:text-[18px] lg:text-[16px] text-[14px] leading-[1.5em] text-center">
+              After Your Job Is Created, Print Out Your QR Code Poster And Place On Window.
+              Applicants Can Now Walk By And Apply.
+            </p>
+          </div>
+
+          <div data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000" class="relative md:top-20 top-0">
+            <div
+              class="mx-auto 2xl:max-w-[200px] sm:max-w-[160px] max-w-[130px] 2xl:h-[200px] sm:h-[160px] h-[130px] border-[10px] border-[#D0F3FB] text-center rounded-full flex justify-center items-center">
+              <img src="./assets/img/hire.png" class="2xl:max-w-[60px] 2xl:h-[60px] max-w-[40px] h-[40px] m-auto" />
+            </div>
+            <h4 class="2xl:text-[30px] xl:text-[26px] lg:text-[22px] text-[20px] text-themeColor-0 font-black text-center my-5">
+              Hire “The One”
+            </h4>
+            <p class="text-themeColor-0 2xl:text-[18px] lg:text-[16px] text-[14px] leading-[1.5em] text-center">
+              Let Hiring Steps Take It From Here As We Collect Everything You Need To Make A Great Hire.
+            </p>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <section class="py-[60px]">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 grid-cols-1 xl:gap-[120px] gap-7 items-center justify-center lg:mt-[110px] mt-0" id="about" data-scroll-to-href="about">
+          <div data-scroll data-scroll-speed=".1" class="lg:order-1 order-2">
+            <h2 class="font-Anton 2xl:text-[80px] xl:text-[70px] lg:mb-[30px] text-center lg:text-left md:text-[57px] sm:text-[47px] text-[34px] leading-[1.3em] text-themeColor-0" data-aos="fade-down"
+              data-aos-duration="1000">
+              What are they
+              saying <span class="text-themeColor2-0"> about you</span>
+            </h2>
+            <p class="2xl:text-[20px] xl:text-[18px] lg:text-left text-center sm:text-[16px] text-[14px] lg:my-0 my-9 text-themeColor-0 leading-[1.5em]" data-aos="fade-up" data-aos-duration="1000"
+              data-aos-delay="300">
+              Per Grubhub.Com, “A Diner Might Leave A Bad Review For Any Number Of Reasons, But Typically They Stem From
+              Poor Customer Service.”
+            </p>
+            <div class="flex items-center lg:justify-start justify-center gap-5 mt-5 flex-wrap" data-aos-offset="0"
+              data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+              <p class="md:text-[24px] text-[18px] lg:text-left text-center text-themeColor-0 leading-[30px] w-full">Let Hiring Steps Help You Find The Winning
+                Team.</p>
+              <p class="2xl:text-[34px] xl:text-[30px] text-[26px] lg:text-left text-center font-black text-themeColor2-0 w-full">Try Hiring Steps For FREE Today</p>
+              <a href="#"
+                class="bg-themeColor2-0 flex items-center justify-start gap-5 transition-all hover:scale-95 rounded-md text-themeColor-0 py-[10px] px-[25px] 2xl:text-[24px] sm:text-[20px] text-[17px]">
+                <i class="fa-solid fa-user-plus"></i>
+                <p class="font-DMSans">Sign Up Now</p>
+              </a>
+              <a href="#"
+                class="flex items-center justify-start gap-5 transition-all hover:scale-95 rounded-md text-themeColor2-0 py-[10px] px-[25px] text-[24px]">
+                <svg class="svg-inline--fa fa-phone-volume fa-xl" aria-hidden="true" focusable="false" data-prefix="fas"
+                  data-icon="phone-volume" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                  data-fa-i2svg="">
+                  <path fill="currentColor"
+                    d="M280 0C408.1 0 512 103.9 512 232c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm-32-72c0-13.3 10.7-24 24-24c75.1 0 136 60.9 136 136c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3 0-24-10.7-24-24zM117.5 1.4c19.4-5.3 39.7 4.6 47.4 23.2l40 96c6.8 16.3 2.1 35.2-11.6 46.3L144 207.3c33.3 70.4 90.3 127.4 160.7 160.7L345 318.7c11.2-13.7 30-18.4 46.3-11.6l96 40c18.6 7.7 28.5 28 23.2 47.4l-24 88C481.8 499.9 466 512 448 512C200.6 512 0 311.4 0 64C0 46 12.1 30.2 29.5 25.4l88-24z">
+                  </path>
+                </svg><!-- <i class="fa-solid fa-phone-volume fa-xl"></i> Font Awesome fontawesome.com -->
+                <div>
+                  <p class="font-DMSans text-[14px] uppercase">Call us TODAY</p>
+                  <p class="font-black 2xl:text-[30px] sm:text-[24px] text-[20px] text-themeColor-0">888-315-5480</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div data-scroll data-scroll-speed="-.1" class="lg:order-2 order-1">
+            <div data-aos="zoom-in" data-aos-duration="800">
+              <img src="./assets/img/about-img.png" class="2xl:h-[682px] h-auto w-full relative" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-[url('/assets/img/footer.png')] min-h-[533px] lg:pt-[240px] pt-[200px] pb-20 md:pb-8 md:mt-14 mt-0 bg-cover bg-center bg-no-repeat relative">
+      <div class="mx-auto container px-4 sm:px-6 lg:px-8 py-6 lg:py-8">
+        <div class="md:flex md:justify-between" data-scroll data-scroll-speed="-.1">
+          <div class="mb-6 md:mb-0 flex-1">
+            <a href="https://flowbite.com/" class="flex items-center">
+              <img src="./assets/img/logo.png" class="h-[23px] max-w-[278px] me-3" alt="FlowBite Logo" />
+            </a>
+            <p class="text-base leading-9 text-white mt-[30px]">
+              Your Complete Hiring Solution And The Only <br>Hiring Platform You Need.
+            </p>
+          </div>
+          <div class="flex-1 grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div>
+              <h2 class="mb-6 2xl:text-[24px] lg:text-[20px] text-[18px] font-black text-white uppercase dark:text-white">Quick Links</h2>
+              <ul class="text-white lg:text-[18px] text-[16px] dark:text-gray-400 font-medium">
+                <li class="lg:mb-4 mb-2">
+                  <a href="https://flowbite.com/" class="hover:text-themeColor2-0">Features</a>
+                </li>
+                <li class="lg:mb-4 mb-2">
+                  <a href="https://flowbite.com/" class="hover:text-themeColor2-0">Pricing</a>
+                </li>
+                <li class="lg:mb-4 mb-2">
+                  <a href="https://flowbite.com/" class="hover:text-themeColor2-0">About</a>
+                </li>
+                <li class="lg:mb-4 mb-2">
+                  <a href="https://flowbite.com/" class="hover:text-themeColor2-0">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul class="text-white lg:text-[18px] text-[16px] dark:text-gray-400 font-medium pt-16">
+                <li class="lg:mb-4 mb-2">
+                  <a href="https://flowbite.com/" class="hover:text-themeColor2-0">Terms & Conditions</a>
+                </li>
+                <li class="lg:mb-4 mb-2">
+                  <a href="https://flowbite.com/" class="hover:text-themeColor2-0">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="mb-6 2xl:text-[24px] lg:text-[20px] text-[18px] font-black text-white uppercase dark:text-white">Contact Us</h2>
+              <ul class="text-white lg:text-[18px] text-[16px] dark:text-gray-400 font-medium">
+                <li class="lg:mb-4 mb-2">
+                  <a href="#" class="hover:text-themeColor2-0">support@hiringsteps.com</a>
+                </li>
+                <li class="lg:mb-4 mb-2">
+                  <a href="#" class="hover:text-themeColor2-0">sales@hiringsteps.com</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:text-themeColor2-0">888-315-5480</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-center bg-themeColor2-0 absolute bottom-0 w-full left-0 py-5">
+          <span class="sm:text-base text-sm text-black font-light text-center dark:text-gray-400">
+            Hiringsteps™ Copyright © 2023. All rights reserved <a href="https://logomentary.com"
+            class="text-themeColor-0 ms-3 font-semibold">Design By Logomentry</a>
+          </span>
+        </div>
+      </div>
+    </footer>
+
+
+  </main>
+
+
+
+
+  <script src="./assets/js/jquery-3.7.0.min.js"></script>
+  <script src="./assets/js/font-awesome-15-14-4.min.js"></script>
+  <!-- <script src="./assets/js/bootstrap.bundle.min.js"></script> -->
+  <script src="./assets/js/locomotive-scroll.min.js"></script>
+  <script src="./assets/js/aos.js"></script>
+  <script src="./assets/js/slick.min.js"></script>
+  <script src="./assets/js/custom.js"></script>
+
+  <script>
+    (function () {
+      const locomotiveScroll = new LocomotiveScroll({
+        lenisOptions: {
+          lerp: 0.08,
+          wheelMultiplier: .8,
+          smoothTouch: false,
+        }
+      });
+    })();
+
+    function removeDataScrollIfNecessary() {
+            var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+            var thresholdWidth = 1024; // Adjust this threshold as needed
+            var elementsWithDataScroll = document.querySelectorAll('[data-scroll]');
+
+            if (windowWidth < thresholdWidth) {
+                elementsWithDataScroll.forEach(function (element) {
+                    element.removeAttribute('data-scroll');
+                });
+            }
+        }
+
+        // Call the function initially to set the attribute based on the initial window width
+        removeDataScrollIfNecessary();
+
+        // Add an event listener to handle window resize
+        window.addEventListener('resize', removeDataScrollIfNecessary);
+
+  </script>
+</body>
+
+</html>
